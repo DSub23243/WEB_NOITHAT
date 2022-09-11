@@ -10,9 +10,23 @@
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./CSS/search-btn.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/test.css">
+
+    <script>
+      window.console = window.console || function(t) {};
+    </script>
+    
+      
+      
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+    
+    <title>Home</title>
 </head>
 <body>
       <div class="menu">
@@ -40,14 +54,74 @@
           <h2 style="font-weight: 400;font-size: 45px;">Few things are</h2>
         <h2 id="slo-1" style="font-weight:bold ;font-size: 45px;">Design better.</h2>
         </div>
-        
       </div>  
     </section>
+
+
+    <div class="page-wrap">
+
+  <div id="home-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-one">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-one">
+              <h1>A <span class="emphasis">Simple style</span>. <br><span>Of Elegance.</span></h1>
+              <p>Chapter I</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-two">
+              <p class="paragraph">
+                Minimalism là phong cách thể hiện sự đa dạng của nghệ thuật, đặc biệt trong nghệ thuật thị giác và âm nhạc, ở đây phẩm được yêu cầu thiết kế tối giản nhất có thể.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-two">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-three">
+              <h1>An <span class="emphasis">architecture</span>. <br><span>The minimalist life.</span></h1>
+              <p>Chapter II</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-four">
+              <p class="paragraph">
+                Nội thất mang đường nét tối thiểu, ít chi tiết, và giảm đối đa số lượng, đặc biệt mọi chi tiết đều mang những ý nghĩa nhất định nhằm tạo ra không gian hài hòa và thông thoáng nhất.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-three">
+          <div class="swiper-image" data-swiper-parallax-y="-20%">
+            <div class="swiper-image-inner swiper-image-left swiper-image-five">
+              <h1>New <span class="emphasis">Trend</span>. <br><span>Of Perfection.</span></h1>
+              <p>Chapter III</p>
+            </div>
+          </div>
+          <div class="swiper-image" data-swiper-parallax-y="35%">
+            <div class="swiper-image-inner swiper-image-right swiper-image-six">
+              <p class="paragraph">
+                Nơi cung cấp các mặc hàng nội thất,nơi sáng tạo nên phong cách tối giản của bạn, đơn giản tận cùng, đơn giản hết mức có thể.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+</div>
+
+
     <section>
       <div class="container">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a id="create-content" class="nav-link active" href="#">Nổi bật</a>
+                <a href="#content-pro" id="create-content" class="nav-link active" href="#">Nổi bật</a>
             </li>
             <li class="nav-item">
                 <a id="create-content" class="nav-link active" href="#">Xu hướng</a>
@@ -104,8 +178,9 @@
         </div>
       </div>
     </div>
+
     <div class="text-pro" style="text-align: center; font-size: 30px; font-weight: bold;">
-      <p id="content-pro" style="font-size: 40px;">Sản phẩm</p>
+      <p id="content-pro" style="font-size: 40px;">Sản phẩm nổi bật</p>
     </div>
       <div class="card-group">
         <div class="card">
@@ -241,6 +316,7 @@
         </section>
   </div>
       </div>
+
       <footer class="site-footer">
         <div class="container">
           <div class="row">
@@ -294,6 +370,24 @@
         
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js'></script>
+      <script id="rendered-js" >
+var mySwiper = new Swiper(".swiper-container", {
+  direction: "vertical",
+  loop: true,
+  pagination: ".swiper-pagination",
+  grabCursor: true,
+  speed: 1000,
+  paginationClickable: true,
+  parallax: true,
+  autoplay: false,
+  effect: "slide",
+  mousewheelControl: 1 });
+//# sourceURL=pen.js
+    </script>
 <script>
   $(document).ready(function(){
     $(window).scroll(function(){
